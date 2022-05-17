@@ -74,9 +74,11 @@ class _GroupMembersState extends State<GroupMembers> {
                    ),
                  ),
                ),
-              Container
-                (padding: const EdgeInsets.only(top: 5),
-                  child: GroupMemberList(uId: currentUser.userId, groupName: widget.groupName,),
+              Flexible(
+                child: Container
+                  (padding: const EdgeInsets.only(top: 5),
+                    child: GroupMemberList(uId: currentUser.userId, groupName: widget.groupName,),
+                ),
               ),
             ],
           ),
